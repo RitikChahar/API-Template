@@ -3,7 +3,7 @@ from django.http import JsonResponse, HttpResponse
 import json
 
 @csrf_exempt
-def name(request):
+def fullName(request):
     if (request.method=="POST"):
         request_data=json.loads(request.body)
         Name = request_data['name']
